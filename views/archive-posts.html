@@ -1,0 +1,6 @@
+<div class="panel panel-default" ng-repeat="post in posts | limitTo: 15">
+  <div class="panel-heading"><a ng-href="/#/blog/{{ post.id }}">{{ post.title }}</a></div>
+  <div class="panel-body">
+    {{ post.body | limitTo: 200 }}...
+  </div>
+</div>
